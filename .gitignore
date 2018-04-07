@@ -36,3 +36,8 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+#忽视back2文件夹
+back2
+# 忽视.gitignore文件
+.gitignore

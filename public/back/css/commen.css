@@ -112,7 +112,7 @@
  .lt_main {
      height: 1000px;
      width: 100%;
-     background-color: cyan;
+     /* background-color: cyan; */
      padding-left: 180px;
      padding-top: 50px;
      transition: all 1s;
@@ -150,4 +150,8 @@
      margin-top: 20px;
  }
 
+ .echarts_1,.echarts_2{
+     width: 48%;
+     height: 400px;
+ }
  /* lt_main 结束 */
