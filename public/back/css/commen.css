@@ -24,6 +24,14 @@
      background: #222D32;
  }
 
+ /* table */
+
+ .table.table-bordered th,
+ .table.table-bordered td {
+     vertical-align: middle;
+     text-align: center;
+ }
+
  .mt_150 {
      margin-top: 150px;
  }
@@ -150,8 +158,10 @@
      margin-top: 20px;
  }
 
- .echarts_1,.echarts_2{
+ .echarts_1,
+ .echarts_2 {
      width: 48%;
      height: 400px;
  }
+
  /* lt_main 结束 */

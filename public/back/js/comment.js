@@ -1,3 +1,26 @@
+//在一进入页面就判断是否登陆，如果没有登陆，拦截到登陆页
+//如果后端响应头中设置了 Content - Type: application / json
+// jquery 会自动识别, 将返回数据类型, 当成json字符串解析成对象
+
+//判断当前页是不是登陆页,如果是登陆页 就不再判断是否登陆
+  if(location.href.indexOf("login.html")===-1){
+    $.ajax({
+      url:'/employee/checkRootLogin',
+      dataType:'json',
+      type:'get',
+      success:function (info) { 
+        // console.log(info)
+        if(info.success) {
+          console.log("登陆了")
+        }
+        if(info.error==400) {
+          location.href="login.html";
+        }
+       }
+    })
+  }
+
+
 
   //配置小圆环
   NProgress.configure({ showSpinner: false });
@@ -13,7 +36,7 @@
     NProgress.start();
   });
 
-$(document).ajaxStop(function(){
+  $(document).ajaxStop(function(){
   //模拟网络延迟
   setTimeout(() => {
     NProgress.done();
@@ -36,7 +59,7 @@ $(function () {
      $('.lt_topbar').toggleClass("hidemenu");
     })
 
-
+    //3.模态框显示
   $('.icon_logout').click(function () { 
     //模态框显示
     $('#logoutModal').modal("show")
