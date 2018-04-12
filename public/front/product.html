@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <!-- 容器 -->
+  <div class="lt_container">
+    <!-- 头部 -->
+    <div class="lt_header">
+      <a class="icon_left" href="javascript: history.go(-1)"><i class="mui-icon mui-icon-back"></i></a>
+      <h3>搜索中心</h3>
+      <!-- javascript:location.reload()页面重新 -->
+      <a class="icon_right" href="javascript:location.reload()"><i class="mui-icon mui-icon-reload"></i></a>
+    </div>
+
+    <!-- 主体 -->
+    <div class="lt_main">
+          <!-- 区域滚动的容器 -->
+      <div class="mui-scroll-wrapper">
+        <div class="mui-scroll">
+          <!--这里放置真实显示的DOM内容-->
+          <!-- 轮播图 -->
+          <div class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+              <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="images/banner6.png" /></a></div>
+              <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png" /></a></div>
+              <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png" /></a></div>
+              <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png" /></a></div>
+              <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png" /></a></div>
+              <div class="mui-slider-item"><a href="#"><img src="./images/banner5.png" /></a></div>
+              <div class="mui-slider-item"><a href="#"><img src="./images/banner6.png" /></a></div>
+              <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" /></a></div>
+            </div>
+            <!-- 小圆点 -->
+            <div class="mui-slider-indicator">
+              <div class="mui-indicator mui-active"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+              <div class="mui-indicator"></div>
+            </div>
+          </div>
+          <div class="itembox lt_pro_name">
+            <strong>李宁闪击篮球鞋驭帅10镭射队尚4男韦德之道空袭中高帮队尚3.5球鞋</strong>
+          </div>
+          <div class="itembox lt_price">
+            价格：
+            <span class="price">&yen;499.1</span>
+            <span class="old">&yen;588.1</span>
+          </div>
+          <div class="itembox lt_size">
+            尺码：
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+            <span>40</span>
+          </div>
+          <div class="itembox lt_num">
+            数量：
+            <div class="mui-numbox" data-numbox-step='1' data-numbox-min='0' data-numbox-max='100'>
+              <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+              <input class="mui-numbox-input" type="number" />
+              <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+            </div>
+            <span>剩余数量：22双</span>
+          </div>
+           <div class="itembox lt_desc">详情：描述</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="lt_go_cart">
+     <a href="#" class="go_cart mui-pull-left">去购物车</a>
+
+     <div class="btns mui-pull-right">
+       <button class="mui-btn-red">加入购物车</button>
+       <button class="mui-btn-warning">立即购买</button>
+     </div>
+    </div>  
+  </div>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/mui/js/mui.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
